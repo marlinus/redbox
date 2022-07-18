@@ -41,7 +41,7 @@ export const Parse = () => {
 						<span className='desc-one-left-rating'>{info['rating']}</span>
 						<p>{info['title']}</p>
 						<ul>
-							<li className='address'>{info['city']}, {info['address']}<img src={address} alt='address_png'/></li>
+							<li className='address'>г. {info['city']}, ул. {info['address']}<img src={address} alt='address_png'/></li>
 							<li className='date'>
 								{moment(info['date-start']).format('D MMM YYYY (dd)')}, {moment(info['date-end']).format('D MMM YYYY (dd)')}
 								<img src={date} alt='date_png'/></li>

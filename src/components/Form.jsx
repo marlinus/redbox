@@ -50,9 +50,11 @@ export const Form = () => {
 
 			form.forEach((item, key) => {
 				if (key === 'organizer' || key === 'city' || key === 'title' || key === 'description' || key === 'address') {
-					const clear = item.trim();
+
+					let clear = item.trim();
 					item = clear.slice(0, 1).toUpperCase() + clear.slice(1);
 					temp[key] = item;
+
 				} else {
 					temp[key] = item.trim();
 				}

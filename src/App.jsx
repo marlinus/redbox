@@ -6,7 +6,7 @@ import {Parse} from "./components/Page2/Parse";
 
 export const App = () => {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className='container'>
         <Routes>
           <Route path='/' element={<Form />}/>
