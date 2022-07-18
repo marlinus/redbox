@@ -1,0 +1,176 @@
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+/*
+Warning message
+ */
+.warning {
+    width: 100%;
+    padding: 30px 15px 30px 91px;
+    line-height: 22px;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    box-shadow: 0 8px 25px rgba(155, 99, 248, 0.15);
+    border-radius: 4px;
+    margin-bottom: 60px;
+    /*border: 1px solid black;*/
+}
+
+.warning span {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: #FF2998;
+    color: white;
+    line-height: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 18px;
+    left: 24px;
+}
+
+/*
+Desk left
+ */
+
+.desc-one {
+    display: flex;
+}
+
+.desc-one .desc-one-left {
+    width: 415px;
+    /*border: 1px solid black;*/
+    margin-left: 68px;
+    position: relative;
+}
+
+.desc-one .desc-one-left p {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+    color: #351768;
+    margin-bottom: 32px;
+}
+
+.desc-one-left-rating {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background-color: #351767;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    color: white;
+    top: 6px;
+    left: -66px;
+}
+
+.desc-one .desc-one-left li {
+    list-style: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #211536;
+    opacity: .6;
+    margin-bottom: 14px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.desc-one .desc-one-left li:last-child {
+    margin-bottom: 23px;
+}
+.desc-one-left img {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    left: -28px;
+    top: 0;
+}
+.desc-one .desc-one-left .contacts {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #211536;
+    margin-bottom: 13px;
+}
+
+.desc-one .desc-one-left .organizer {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #211536;
+    position: relative;
+    margin-top: 25px;
+    /*font-family: Montserrat, sans-serif;*/
+}
+.desc-one .desc-one-left .organizer span {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #8E69CC;
+    left: 0;
+    bottom: -12px;
+}
+
+/*
+Desc right
+ */
+
+.desc-one-right .box {
+    background-image: url("https://cs5.pikabu.ru/post_img/big/2014/11/04/8/1415106538_765619604.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    width: 630px;
+    height: 450px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.desc-one-right img {
+    width: 630px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*
+Desk-two
+ */
+
+.desc-two p {
+    width: 1109px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #211536;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/*
+buttons
+ */
+
+.next-back .send, .next-back .back {
+    padding: 10px;
+}
+
+:is(.next-back .send, .next-back .back):hover {
+    cursor: pointer;
+    background-color: #9B63F8;
+    color: white;
+    transition: all .3s ease-out;
+}

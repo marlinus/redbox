@@ -1,0 +1,356 @@
+.container {
+  width: 1200px;
+  min-height: 1000px;
+  padding: 40px 30px 50px 30px;
+  background-color: #fff;
+  border: 1px solid black;
+  margin: 200px auto;
+  border-radius: 4px;
+}
+
+.title {
+  color: #351768;
+  line-height: 49px;
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  top: 100px;
+}
+
+.item-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #211536;
+}
+.item-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #211536;
+  line-height: 20px;
+}
+
+input {
+  padding: 18px 25px 20px 25px;
+  border: 1px solid #CDB1FB;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+}
+input::placeholder {
+  font-size: 16px;
+}
+
+/*
+  Организатор
+ */
+
+label[for='organizer'] {
+  display: block;
+  position: relative;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
+
+input[name='organizer'] {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*
+ Контакстные данные
+ */
+
+.contacts {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts input {
+  width: 367px;
+  height: 58px;
+  margin-top: 10px;
+}
+.contacts input::placeholder {
+  font-size: 16px;
+}
+
+/*
+ Общая информация
+ */
+
+label[for='title'] {
+  display: block;
+  margin-top: 30px;
+}
+
+input[name='title'] {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/*
+ Photo
+ */
+
+.photo-wrapper {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  /*border: 1px solid black;*/
+  height: 164px;
+  padding-left: 10px;
+  display: flex;
+}
+
+.box {
+  width: 126px;
+  height: 126px;
+  border: 1px solid black;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.choose-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #CDB1FB;
+  background-color: #F8F8FE;
+  position: relative;
+}
+
+.choose-file:hover {
+  cursor: pointer;
+  opacity: .85;
+}
+
+.choose-file img {
+  width: 47px;
+}
+
+.selected-files {
+  /*border: 1px solid black;*/
+  height: 126px;
+}
+
+.selected-files .box {
+  position: relative;
+}
+
+.selected-files .box span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #351767;
+  border-radius: 50%;
+  color: #fff;
+  right: -15px;
+  top: -16px;
+}
+
+.selected-files .box p,
+.choose-file p {
+  position: absolute;
+  font-size: 10px;
+  line-height: 14px;
+  white-space: nowrap;
+  bottom: -35px;
+  left: 0;
+}
+
+.selected-files img {
+  width: 100%;
+  height: 100%;
+}
+
+.choose-file p {
+  bottom: -37px;
+}
+
+.selected-files .box span:hover {
+  cursor: pointer;
+  opacity: .9;
+}
+
+.active {
+  opacity: .2;
+  transform: scale(.3);
+  transition: all .3s ease-in;
+}
+
+/*
+ Detailed Description
+ */
+
+label[for='detailed-description'] textarea {
+  width: 100%;
+  height: 193px;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border: 1px solid #CDB1FB;
+  border-radius: 4px;
+  padding: 15px 25px 20px 15px;
+  font-size: 16px;
+}
+
+/*
+ Data choose
+ */
+
+.data-choose label {
+  position: relative;
+}
+
+.data-choose, .data-box {
+  display: flex;
+}
+
+.data-box {
+  flex-wrap: wrap;
+}
+
+.data-box .column {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+  background: rgba(205, 177, 251, .3);
+  border-radius: 4px;
+  padding: 10px 0 10px 20px;
+}
+
+.data-box .column span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #351767;
+  border-radius: 50%;
+  color: #fff;
+  right: -26px;
+  top: -27px;
+}
+
+.data-box .column span:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+:is(.data-choose, .data-box) input {
+  display: inline-block;
+  width: 254px;
+  height: 58px;
+  border: 1px solid #CDB1FB;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  margin-right: 20px;
+}
+
+:is(.data-choose, .data-box) img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 50px;
+  right: 45px;
+}
+
+:is(.data-choose input[type='time'], .data-box input[type='time']) + img {
+  width: 18px;
+}
+
+:is(.data-choose, .data-box) .line {
+  width: 55px;
+  height: 2px;
+  background: #CDB1FB;
+  border-radius: 5px;
+  position: relative;
+  top: 58px;
+  margin-right: 20px;
+}
+
+.data-box .line {
+  width: 10px;
+}
+
+.btn-add-date {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 182px;
+  height: 58px;
+  border: 1px solid #9B63F8;
+  border-radius: 4px;
+}
+
+.btn-add-date:hover {
+  cursor: pointer;
+  background-color: #9B63F8;
+  color: white;
+}
+
+/*
+ Rating
+ */
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating select, .rating input {
+  font-family: Montserrat, sans-serif;
+  line-height: 20px;
+  width: 562px;
+  height: 58px;
+  padding: 18px 25px 20px 25px;
+  border: 1px solid #CDB1FB;
+  border-radius: 4px;
+}
+
+/*
+  next-back buttons
+ */
+
+.next-back {
+  margin-top: 50px;
+}
+
+.next-back .btn {
+  width: 285px;
+  height: 58px;
+  border: 1px solid #9B63F8;
+  border-radius: 4px;
+  padding: 19px 99px 19px 101px;
+  display: inline-block;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.next-back .btn-next:disabled {
+  cursor: not-allowed;
+}
+
+.next-back .btn-next.active-btn:hover {
+  cursor: pointer;
+  background-color: #9B63F8;
+  color: white;
+}
+
+.next-back .btn-cancel:hover {
+  background-color: #9B63F8;
+  cursor: pointer;
+  color: white;
+  transition: background-color .2s ease-out, color .2s ease-out;
+}
